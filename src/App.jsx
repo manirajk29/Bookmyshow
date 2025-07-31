@@ -7,7 +7,7 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const API_KEY = ""; 
+  const API_KEY = import.meta.env.VITE_API_KEY; 
   const API_URL = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=1`;
 
   useEffect(() => {
